@@ -1,8 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
+import DummyButton from './components/DummyButtion.vue'
+import DummyText from './components/DummyText.vue'
 
-Vue.config.productionTip = false
+const components = {
+  DummyButton,
+  DummyText
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export default {
+  install (Vue) {
+    Object.keys(components).forEach(name => {
+      Vue.component(name, components[name])
+    })
+  }
+}
