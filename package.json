@@ -1,6 +1,6 @@
 {
   "main": "./dist/dummylib.common.js",
-  "name": "dummylib",
+  "name": "@heun3344/dummylib",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -41,5 +41,15 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` yarn install ```",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.nexon.com:8022/heun3344/nx-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "@heun3344:registry":"https://gitlab.com/api/v4/projects/<your_project_id>/packages/npm/"
+  }
 }
